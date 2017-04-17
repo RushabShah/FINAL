@@ -5,6 +5,10 @@ from pymongo import MongoClient
 class Philosopher(threading.Thread):
     running = True
     connection = MongoClient("127.0.0.1",27017)
+        #connection=MongoClient('mongodb://username:pwd@ip:27017/dbname')
+    #Client=MongoClient('mongodb://username:pwd@ip:27017/dbname')
+    #db=Client.dbname
+    #collection=db.colname
     printcounter=0
 
     @staticmethod
